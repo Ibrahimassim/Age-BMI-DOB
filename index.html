@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Ibrahim Assim Shah - Age & BMI Tools</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Syed Ibrahim Assim Shah</h1>
+    <p>Welcome to my age, health and BMI calculator</p>
+  </header>
+  <nav>
+    <a href="#age">Age Calculator</a>
+    <a href="#bmi">BMI Calculator</a>
+    <a href="#dob">DOB Finder</a>
+  </nav>
+  <section id="age" class="tool">
+    <h2>Age Calculator</h2>
+    <input type="date" id="dob" />
+    <button onclick="calculateAge()">Calculate Age</button>
+    <p id="ageResult"></p>
+  </section>
+
+  <section id="bmi" class="tool">
+    <h2>BMI Calculator</h2>
+    <input type="number" id="height" placeholder="Height in cm" />
+    <input type="number" id="weight" placeholder="Weight in kg" />
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <p id="bmiResult"></p>
+  </section>
+
+  <section id="dob" class="tool">
+    <h2>DOB Finder</h2>
+    <input type="number" id="ageInput" placeholder="Enter your age in years" />
+    <button onclick="findDOB()">Find DOB</button>
+    <p id="dobResult"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
